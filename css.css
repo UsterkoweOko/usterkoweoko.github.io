@@ -1,0 +1,21 @@
+body
+{
+    background: url(1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    font-family: consolas;
+}
+h1
+{
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+span
+{
+    color: transparent;
+}
