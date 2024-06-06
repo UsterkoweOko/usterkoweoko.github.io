@@ -1,6 +1,0 @@
-RewriteEngine on
-RewriteRule ^Home$ index.html [L]
-RewriteRule ^About$ about.html [L]
-RewriteRule ^Leaks$ leaks.html [L]
-RewriteRule ^Socials$ social.html [L]
-DirectoryIndex https://usterkoweoko.github.io/Home
