@@ -1,21 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 body
 {
-    background: url(1.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-    font-family: consolas;
+    background-image: url(Images/Noise.png);
+    background-size: cover;
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-h1
+#uc
 {
-    margin: 0;
-    position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
+    position: absolute;
+    margin: 0;
     transform: translate(-50%, -50%);
-    color: white;
 }
-span
+#Logo
 {
-    color: transparent;
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    margin: 0;
+    transform: translate(-50%, -50%);
 }
