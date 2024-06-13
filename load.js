@@ -1,4 +1,4 @@
 function start()
 {
-window.location.replace("https://usterkoweoko.github.io/under_construction");
+window.location.replace("https://usterkoweoko.github.io/Home");
 }
