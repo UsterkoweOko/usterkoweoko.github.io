@@ -2,7 +2,7 @@ body
 {
     background: url(Images/website.png);
     background-color: #161515;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
   font-family: "Permanent Marker", cursive;
