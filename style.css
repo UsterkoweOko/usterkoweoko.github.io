@@ -1,10 +1,9 @@
 body
 {
     background: url(1.png);
-    background-color: #161515;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover;
+    background-size: 100% 100%;
     font-family: consolas;
 }
 h1
