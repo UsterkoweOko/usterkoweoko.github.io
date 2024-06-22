@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    <form id="loginForm">
+        <label for="login">Login:</label><br>
+        <input type="text" id="login" name="login" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+    
+    String.prototype.hashCode = function() {
+  var hash = 0,
+    i, chr;
+  if (this.length === 0) return hash;
+  for (i = 0; i < this.length; i++) {
+    chr = this.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
+  return hash;
+}
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const a = document.getElementById('login').value;
+            const b = document.getElementById('password').value;
+
+            var c = btoa(a);
+            var d = btoa(b);
+
+
+            var e = c.hashCode();
+            var f = d.hashCode();
+            
+            var login = e.toString();
+            var password = f.toString();
+            
+            console.log(login+" deeznuts "+password);
+            const users = {
+                '-1442567393': '-24779394'
+            };
+
+            if (users[login] && users[login] === password) {
+                sessionStorage.setItem('loggedIn', 'true');
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Login failed, please try again.');
+            }
+        });
+    </script>
+</body>
+</html>

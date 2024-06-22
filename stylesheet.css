@@ -1,0 +1,39 @@
+body
+{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+input
+{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+}
+button
+{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#img
+{
+    width: 10%;
+    height: 10%;
+}
+#loginForm
+{
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+text-align: center;
+border-radius: 10px;
+width: 20%;
+height: 20%;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+}
