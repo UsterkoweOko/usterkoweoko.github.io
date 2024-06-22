@@ -12,6 +12,14 @@ body
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
 }
+#center
+{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
 #mc
 {
     top: 50%;
