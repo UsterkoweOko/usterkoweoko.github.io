@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    <h1>Tips for the hat:</h1>
+    <h3>
+        Conditions:<br>
+        You have to beat the game in under 30 minutes,<br>
+        Find all 9 numbers and type them into the keypad (which are shown here.),<br>
+        Talk to sans for a lockpick.<br>
+    </h3>
+    <img id="img" src="image.png">
+    <img id="img" src="image2.png">
+    <img id="img" src="image3.png"><br>
+    <img id="img" src="image4.png">
+    <img id="img" src="image5.png">
+    <img id="img" src="image6.png"><br>
+    <img id="img" src="image7.png">
+    <img id="img" src="image8.png">
+    <img id="img" src="image9.png"><br>
+    <img id="img" src="image10.png"><br><br>
+    <button id="logoutButton">Logout</button>
+    <script>
+
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+            window.location.href = 'thereissomethingwrong.html';
+        }
+
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            sessionStorage.removeItem('loggedIn');
+            window.location.href = 'thereissomethingwrong.html';
+        });
+    </script>
+</body>
+</html>
