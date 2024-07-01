@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 1, 2024 17:00:00").getTime();
+var countDownDate = new Date("Jul 1, 2024 18:00:00").getTime();
 
 var x = setInterval(function() {
   var Audio = document.getElementById("snd");
